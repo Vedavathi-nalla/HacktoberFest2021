@@ -19,6 +19,12 @@ def divide(x, y):
 def squareroot(x):
     return math.sqrt(x)
 
+def power(x,y):
+    return x**y
+
+def modulo(x,y):
+    return x % y
+
 
 print("Select operation.")
 print("1.Add")
@@ -26,6 +32,8 @@ print("2.Subtract")
 print("3.Multiply")
 print("4.Divide")
 print("5.Square Root")
+print("6.Power")
+print("7.modulo Division")
 
 while True:
     # take input from the user
@@ -47,6 +55,12 @@ while True:
 
         elif choice == '4':
             print(num1, "/", num2, "=", divide(num1, num2))
+        
+        elif choice == '6':
+            print(num1, "^" ,num2,"=",power(num1,num2))
+            
+        elif choice == '7':
+            print(num1, "%" , num2,"=",modulo(num1,num2))
         
         # check if user wants another calculation
         # break the while loop if answer is no
